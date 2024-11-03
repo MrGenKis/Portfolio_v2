@@ -1,0 +1,23 @@
+
+.meteor {
+    position: fixed;
+    top: -10px;
+    width: 6px; 
+    height: 140px; 
+    background: linear-gradient(transparent, #ffba49); 
+    opacity: 0.8;
+    transform: rotate(45deg);
+    animation: meteorFall linear forwards;
+    z-index: 1;
+  }
+  
+  @keyframes meteorFall {
+    0% {
+      transform: translateY(-100px) translateX(0) rotate(45deg);
+    }
+    100% {
+      transform: translateY(120vh) translateX(-120vw) rotate(45deg);
+      opacity: 0;
+    }
+  }
+  

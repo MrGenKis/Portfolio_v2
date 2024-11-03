@@ -1,0 +1,40 @@
+
+.skills-section {
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    color: var(--color-accent-planet);
+    margin-bottom: 2rem;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .skill {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .skill img {
+    width: 120px;
+    height: 130px;
+    transition: transform 0.3s;
+  }
+  
+  .skill img:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  

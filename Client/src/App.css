@@ -1,0 +1,29 @@
+
+:root {
+  --color-space-dark: #0b0d1f;
+  --color-space-mid: #1f1e3b;
+  --color-space-light: #2e3250;
+  --color-nebula-pink: #623aa2;
+  --color-nebula-blue: #274d8f;
+  --color-accent-orange: #ffba49;
+  --color-accent-planet: #f67280;
+  --color-text-light: #d8d8d8;
+}
+
+body {
+  font-family: 'Oxanium', sans-serif;
+}
+
+.App {
+  background: linear-gradient(
+    to bottom,
+    var(--color-space-dark),
+    var(--color-space-mid) 50%,
+    var(--color-space-light) 100%
+  );
+  color: var(--color-text-light);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}

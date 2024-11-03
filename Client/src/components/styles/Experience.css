@@ -1,0 +1,40 @@
+
+.experience-section {
+    padding: 2rem 0;
+    color: var(--text-color);
+  }
+  
+  .experience-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-accent-planet);
+    margin-bottom: 2rem;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .experience-card {
+    background-color: var(--background-color-top);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .experience-card h3 {
+    color: var(--color-accent-orange);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-card h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-card p {
+    margin-bottom: 1rem;
+  }
+  
