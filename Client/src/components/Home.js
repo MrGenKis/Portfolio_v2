@@ -40,8 +40,7 @@ function Home() {
           <h1>Idriss ASKRI</h1>
           <br />
           <p>
-            Développeur Web passionné par la création de sites web et d'applications web.
-          </p>
+          Développeur web passionné, spécialisé dans la création de sites et d’applications web.          </p>
           <a href="/cv/CV.pdf" download className="download-cv-button">
             Télécharger le CV
           </a>
@@ -73,7 +72,7 @@ function Home() {
 
       <section id="about" className="section">
         <h2>À propos</h2>
-        <p>Jeune développeur web passionné. Après avoir exploré différentes voies, j'ai enfin trouvé ma véritable vocation dans le développement web.</p>
+        <p>Jeune développeur web passionné, j'ai exploré diverses voies avant de découvrir ma véritable vocation dans le développement web.</p>
       </section>
 
       <Education />
@@ -88,7 +87,7 @@ function Home() {
       <section id="contact" className="section">
         <h2>Contact</h2>
         <p>
-          Vous souhaitez collaborer ou simplement discuter ? N’hésitez pas à me contacter.
+          Vous souhaitez discuter ? N’hésitez pas à me contacter.
         </p>
         <ContactForm />
       </section>

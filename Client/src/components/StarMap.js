@@ -16,7 +16,7 @@ const projects = [
   {
     id: 2,
     title: 'Préhistold',
-    description: `La planète Préhistold est tout droit tirée d'un Rogue-like. Nous jouons un homme bloqué dans une grotte qui doit s'échapper en combattant des monstres.`,
+    description: `Préhistold est une planète inspirée des univers Rogue-like. Le joueur incarne un homme piégé dans une grotte, cherchant à s'échapper en affrontant des monstres sur son chemin.`,
     technologies: ['JavaScript', 'HTML', 'Phaser'],
     position: { top: '20%', left: '50%' },
     image: '/images/projects/Prehisold.png',

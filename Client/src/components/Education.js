@@ -9,19 +9,20 @@ function Education() {
       title: "Intégrateur-Developpeur Web ",
       institution: "Web@cademie by Epitech",
       description:
-        "Formation de 2 ans , permettant a des gens de devenir des professionnel en developpement web",
+        "Formation de deux ans visant à former des professionnels du développement web.",
     },
     {
       year: "2017",
       title: "Bac Pro Gestions Administration",
       institution: "Lycée Eugenie Cotton",
-      description: `Le titulaire du baccalauréat professionnel Gestion-Administration a pour mission de prendre en charge les activités relevant de la gestion administrative au sein dentreprises`,
+      description: `Le titulaire du baccalauréat professionnel Gestion-Administration est chargé de gérer les activités administratives au sein des entreprises.
+`,
     },
   ];
 
   return (
     <section id="education" className="education-section">
-      <h2>Formation</h2>
+      <h2>Formations</h2>
       <div className="timeline">
         {education.map((edu, index) => (
           <div key={index} className="timeline-item">
