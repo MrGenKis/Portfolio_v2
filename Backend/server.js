@@ -15,13 +15,13 @@ const contactRoute = require('./routes/contact');
 app.use('/api', contactRoute);
 
 // Sert les fichiers statiques de React
-app.use(express.static(path.join(__dirname, '../Client/build')));
+app.use(express.static(path.resolve(__dirname, '../Client/build')));
 
 // Gère toutes les autres routes en renvoyant l'index.html de React
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Client/build', 'index.html'), function (err) {
+  res.sendFile(path.resolve(__dirname, '../Client/build', 'index.html'), function (err) {
     if (err) {
-      res.status(500).send(err)
+      res.status(500).send(err);
     }
   });
 });
