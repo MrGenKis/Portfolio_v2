@@ -10,26 +10,20 @@ app.use(cors());
 
 // Import de la route de contact
 const contactRoute = require('./routes/contact');
-
-// Utilisation de la route API
 app.use('/api', contactRoute);
 
-// Sert les fichiers statiques de React
-app.use(express.static(path.resolve(__dirname, '../Client/build')));
+// Définit le chemin vers le build de React
+const buildPath = path.join(__dirname, '../Client/build');
+app.use(express.static(buildPath));
 
-// Gère toutes les autres routes en renvoyant l'index.html de React
+// Redirige toutes les autres requêtes vers index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../Client/build/', 'index.html'), function (err) {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
+  res.sendFile(path.join(buildPath, 'index.html'));
 });
 
 // Définition du port
 const PORT = process.env.PORT || 5000;
 
-// Démarrage du serveur
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur le port ${PORT}`);
 });
