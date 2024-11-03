@@ -14,12 +14,16 @@ const contactRoute = require('./routes/contact');
 // Utilisation de la route API
 app.use('/api', contactRoute);
 
-// Sert les fichiers statiques du build React
+// Sert les fichiers statiques de React
 app.use(express.static(path.join(__dirname, '../Client/build')));
 
-// Gestion de toutes les autres routes pour renvoyer l'index.html de React
+// Gère toutes les autres routes en renvoyant l'index.html de React
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../Client/build', 'index.html'), function (err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  });
 });
 
 // Définition du port
