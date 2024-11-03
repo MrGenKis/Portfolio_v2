@@ -17,10 +17,9 @@ app.use('/api', contactRoute);
 // Sert les fichiers statiques du build React
 app.use(express.static(path.join(__dirname, '../Client/build')));
 
-
 // Gestion de toutes les autres routes pour renvoyer l'index.html de React
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../Client/build', 'index.html'));
 });
 
 // Définition du port
